@@ -30,11 +30,9 @@ async function getJoke() {
         // If the joke is two-part
         if (data.setup) {
             joke = `${data.setup} .. ${data.delivery}`
-            // console.log(joke)
         } else {
             // If the joke is single part
             joke = data.joke
-            // console.log(joke)
         }
     } catch(error) {
         console.log("Whoops" , error)
