@@ -1,0 +1,64 @@
+/* BG Color #45badd */
+/* Button , height:50px , width 200px bacgroud color #ff3482 
+box shadow 2px 2px 20px 10px rgba(0,0,0,0.2)
+mobile: 5 5 30 20 rgba(0,0,0,0.5)
+*/
+
+* {
+    box-sizing: border-box;
+    background: #45badd;
+}
+body {
+    margin: 0;
+    background: #45badd;
+
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: url("/robot.gif");
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button {
+    background-color: #ff3482;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 20px 10px rgba(0,0,0,0.2);
+}
+button:hover {
+    filter: brightness(95%);
+}
+button:active {
+    transform: scale(0.98);
+}
+
+button:disabled {
+    filter: brightness(35%);
+    cursor: default;
+}
+/* Media QUery * Tablet or Smaller */
+@media  screen and (max-width:1000px) {
+    button {
+        box-shadow:5px 5px 30px 20px rgba(0,0,0,0.5);
+
+    }
+    .container {
+        background-position: center center;
+        background-size: cover;
+    }
+}
